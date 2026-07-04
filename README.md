@@ -5,6 +5,10 @@
 ![OS](https://img.shields.io/badge/OS-Raspberry%20Pi%20OS-green)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
+<p align="center">
+  <img src="images/hero.jpg" alt="Pi-hole Raspberry Pi 3B+" width="700">
+</p>
+
 ## Project Status
 
 🟢 **Active**
@@ -23,20 +27,25 @@ The system provides network-wide DNS filtering and DHCP services for my home net
 
 ## Table of Contents
 
-- [Project Overview](#project-overview)
-- [Objectives](#objectives)
-- [Features](#features)
-- [Hardware](#hardware)
-- [Software](#software)
-- [Project Specifications](#project-specifications)
-- [Network Configuration](#network-configuration)
-- [Installation](#installation)
-- [Challenges](#challenges)
-- [Results](#results)
-- [Skills Demonstrated](#skills-demonstrated)
-- [Lessons Learned](#lessons-learned)
-- [Future Improvements](#future-improvements)
-- [Repository Structure](#repository-structure)
+- [Pi-hole DNS Server](#pi-hole-dns-server)
+  - [Project Status](#project-status)
+  - [Project Overview](#project-overview)
+  - [Table of Contents](#table-of-contents)
+  - [Objectives](#objectives)
+  - [Features](#features)
+  - [Hardware](#hardware)
+  - [Software](#software)
+  - [Project Specifications](#project-specifications)
+  - [Network Configuration](#network-configuration)
+  - [Installation](#installation)
+  - [Challenges](#challenges)
+  - [Results](#results)
+  - [Skills Demonstrated](#skills-demonstrated)
+  - [Lessons Learned](#lessons-learned)
+  - [Future Improvements](#future-improvements)
+  - [Repository Structure](#repository-structure)
+  - [Screenshots](#screenshots)
+  - [Network Diagram](#network-diagram)
 
 ---
 
@@ -85,15 +94,15 @@ The system provides network-wide DNS filtering and DHCP services for my home net
 
 ## Project Specifications
 
-| Item | Value |
-|------|-------|
-| Platform | Raspberry Pi 3B+ |
-| Operating System | Raspberry Pi OS |
-| DNS Server | Pi-hole |
-| DHCP Server | Pi-hole |
-| Upstream DNS | Cloudflare |
-| Router | Virgin Media Hub 5 |
-| Network Type | Home LAN |
+| Item             | Value              |
+| ---------------- | ------------------ |
+| Platform         | Raspberry Pi 3B+   |
+| Operating System | Raspberry Pi OS    |
+| DNS Server       | Pi-hole            |
+| DHCP Server      | Pi-hole            |
+| Upstream DNS     | Cloudflare         |
+| Router           | Virgin Media Hub 5 |
+| Network Type     | Home LAN           |
 
 ---
 
