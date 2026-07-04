@@ -5,9 +5,17 @@
 ![OS](https://img.shields.io/badge/OS-Raspberry%20Pi%20OS-green)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
+## Project Status
+
+🟢 **Active**
+
+Currently running 24/7 on my home network, providing DNS filtering and DHCP services for all connected devices.
+
+---
+
 ## Project Overview
 
-This project documents the deployment of a Pi-hole DNS server running on a Raspberry Pi 3B+ with a dedicated 5-inch display housed in a custom 3D-printed enclosure.
+This project documents the deployment of a Pi-hole DNS server running on a Raspberry Pi 3B+ with a dedicated 5-inch OSOYOO HDMI display housed in a custom 3D-printed enclosure.
 
 The system provides network-wide DNS filtering and DHCP services for my home network, improving privacy, reducing advertisements and giving me practical experience with Linux administration, networking and self-hosted infrastructure.
 
@@ -17,6 +25,7 @@ The system provides network-wide DNS filtering and DHCP services for my home net
 
 - [Project Overview](#project-overview)
 - [Objectives](#objectives)
+- [Features](#features)
 - [Hardware](#hardware)
 - [Software](#software)
 - [Project Specifications](#project-specifications)
@@ -27,13 +36,32 @@ The system provides network-wide DNS filtering and DHCP services for my home net
 - [Skills Demonstrated](#skills-demonstrated)
 - [Lessons Learned](#lessons-learned)
 - [Future Improvements](#future-improvements)
+- [Repository Structure](#repository-structure)
+
+---
 
 ## Objectives
 
-- Block advertisements across the entire home network
-- Learn DNS and DHCP fundamentals
-- Improve Linux administration skills
-- Gain experience configuring network infrastructure
+- Deploy a self-hosted DNS filtering solution
+- Configure Pi-hole as the primary DHCP server
+- Disable DHCP on the Virgin Media Hub 5
+- Provide network-wide advertisement and tracker blocking
+- Learn DNS and DHCP administration
+- Gain hands-on Linux administration experience
+
+---
+
+## Features
+
+- Network-wide advertisement blocking
+- DNS filtering
+- DHCP server
+- Cloudflare upstream DNS
+- Web-based administration
+- Real-time DNS query logging
+- Raspberry Pi deployment
+- Custom 3D-printed enclosure
+- Dedicated 5-inch display
 
 ---
 
@@ -44,14 +72,13 @@ The system provides network-wide DNS filtering and DHCP services for my home net
 - OSOYOO 5-inch HDMI Display
 - Custom 3D-printed enclosure
 - Virgin Media Hub 5
-  
+
 ---
 
 ## Software
 
 - Raspberry Pi OS
 - Pi-hole
-- Pi-hole Web Interface
 - Cloudflare DNS (Upstream Resolver)
 
 ---
@@ -68,11 +95,15 @@ The system provides network-wide DNS filtering and DHCP services for my home net
 | Router | Virgin Media Hub 5 |
 | Network Type | Home LAN |
 
+---
+
 ## Network Configuration
 
-The Virgin Media router DHCP service was disabled.
+The Virgin Media Hub 5 DHCP service was disabled.
 
-Pi-hole was configured to provide DHCP services so every device connecting to the home network automatically used Pi-hole for DNS resolution.
+Pi-hole was configured to provide DHCP services, allowing every device connected to the home network to automatically receive Pi-hole as its DNS server.
+
+Cloudflare is used as the upstream DNS provider for external DNS resolution.
 
 ---
 
@@ -86,61 +117,107 @@ The installation process included:
 4. Disabling DHCP on the Virgin Media Hub 5.
 5. Enabling the Pi-hole DHCP server.
 6. Testing DNS resolution from multiple client devices.
+7. Verifying DHCP leases and DNS traffic.
+
+---
 
 ## Challenges
 
-The biggest challenge was configuring the Virgin Media router correctly.
+The biggest challenge was configuring the Virgin Media Hub 5 correctly.
 
-Disabling the router DHCP service and allowing Pi-hole to become the DHCP server required troubleshooting before all devices were able to obtain the correct network configuration.
+The router DHCP service had to be disabled before Pi-hole could successfully provide DHCP leases to all connected devices.
 
----
+After the configuration changes, multiple devices were tested to ensure they automatically received the correct DNS settings from Pi-hole.
 
-## Skills Demonstrated
-
-- Linux Administration
-- DNS
-- DHCP
-- Home Networking
-- Raspberry Pi
-- Troubleshooting
+This troubleshooting process improved my understanding of how DHCP and DNS services interact within a home network.
 
 ---
-
-## Features
-
-- Network-wide advertisement blocking
-- DNS filtering
-- DHCP server
-- Cloudflare upstream DNS
-- Web administration interface
-- Real-time query logging
-- Raspberry Pi deployment
-- Custom 3D-printed enclosure
-- Dedicated 5-inch display
 
 ## Results
 
 The completed deployment provides:
 
 - Network-wide DNS filtering
-- Network-wide advertisement blocking
-- DHCP management
-- Centralised DNS administration
+- Advertisement and tracker blocking
+- Centralised DHCP management
+- Cloudflare upstream DNS
 - Web-based monitoring interface
-- Reliable operation for all connected home devices
+- Reliable 24/7 operation
+- DNS monitoring for all connected devices
+
+---
+
+## Skills Demonstrated
+
+- Linux Administration
+- Raspberry Pi Deployment
+- DNS Configuration
+- DHCP Configuration
+- Home Network Administration
+- Network Troubleshooting
+- Self-hosted Infrastructure
+- Service Deployment
+
+---
 
 ## Lessons Learned
 
-This project helped me understand how DNS requests are processed inside a home network and how DHCP controls which DNS server clients receive.
+This project significantly improved my understanding of:
 
-It also improved my troubleshooting skills when working with network devices.
+- DNS request flow
+- DHCP lease management
+- Raspberry Pi deployment
+- Linux system administration
+- Home network infrastructure
+- Network troubleshooting
+
+It also demonstrated the importance of testing network changes before deploying them across an entire home network.
+
+---
 
 ## Future Improvements
 
 Planned future improvements include:
 
 - Enable encrypted DNS (DoH or DoT)
-- Improve dashboard monitoring
 - Add network monitoring
+- Improve dashboard monitoring
 - Improve physical cable management
 - Integrate additional self-hosted services
+- Add automated backup of Pi-hole configuration
+
+---
+
+## Repository Structure
+
+```text
+Pi-hole-DNS/
+│
+├── README.md
+├── CHANGELOG.md
+├── LICENSE
+├── images/
+│   ├── hero.jpg
+│   ├── dashboard.png
+│   ├── dns-settings.png
+│   ├── dhcp-settings.png
+│   ├── query-log.png
+│   └── network-overview.png
+│
+├── diagrams/
+│   └── network-topology.png
+│
+└── docs/
+```
+
+---
+
+## Screenshots
+
+*Coming soon.*
+
+---
+
+## Network Diagram
+
+*Coming soon.*
