@@ -2,9 +2,9 @@
 
 ## Project Overview
 
-This project documents the deployment of a Pi-hole DNS server used to provide network-wide ad and tracker blocking for my home network.
+This project documents the deployment of a Pi-hole DNS server running on a Raspberry Pi 3B+ with a dedicated 5-inch display housed in a custom 3D-printed enclosure.
 
-The project also gave me practical experience with Linux administration, DHCP configuration and home network management.
+The system provides network-wide DNS filtering and DHCP services for my home network, improving privacy, reducing advertisements and giving me practical experience with Linux administration, networking and self-hosted infrastructure.
 
 ---
 
@@ -20,8 +20,9 @@ The project also gave me practical experience with Linux administration, DHCP co
 # Hardware
 
 - Raspberry Pi 3B+
-- MicroSD Card
-- Home Network
+- 32 GB MicroSD Card
+- OSOYOO 5-inch HDMI Display
+- Custom 3D-printed enclosure
 - Virgin Media Hub 5
 ---
 
@@ -29,7 +30,8 @@ The project also gave me practical experience with Linux administration, DHCP co
 
 - Raspberry Pi OS
 - Pi-hole
-- Web Administration Interface
+- Pi-hole Web Interface
+- Cloudflare DNS (Upstream Resolver)
 
 ---
 
@@ -40,6 +42,23 @@ The Virgin Media router DHCP service was disabled.
 Pi-hole was configured to provide DHCP services so every device connecting to the home network automatically used Pi-hole for DNS resolution.
 
 ---
+## Network Architecture
+
+```text
+                Internet
+                    │
+          Virgin Media Hub 5
+            DHCP Disabled
+                    │
+        Raspberry Pi 3B+
+      Pi-hole (DNS + DHCP)
+                    │
+    ┌────────┬────────┬────────┐
+    │        │        │
+   PC      Xbox    Smartphones
+             │
+         Smart Devices
+```
 
 # Challenges
 
