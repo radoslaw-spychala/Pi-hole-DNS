@@ -22,8 +22,7 @@ The project also gave me practical experience with Linux administration, DHCP co
 - Raspberry Pi 3B+
 - MicroSD Card
 - Home Network
-- Virgin Media Router
-
+- Virgin Media Hub 5
 ---
 
 # Software
