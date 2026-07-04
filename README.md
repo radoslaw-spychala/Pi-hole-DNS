@@ -1,5 +1,10 @@
 # Pi-hole DNS Server
 
+![Status](https://img.shields.io/badge/status-active-success)
+![Platform](https://img.shields.io/badge/platform-Raspberry%20Pi-red)
+![OS](https://img.shields.io/badge/OS-Raspberry%20Pi%20OS-green)
+![License](https://img.shields.io/badge/license-MIT-blue)
+
 ## Project Overview
 
 This project documents the deployment of a Pi-hole DNS server running on a Raspberry Pi 3B+ with a dedicated 5-inch display housed in a custom 3D-printed enclosure.
@@ -8,7 +13,22 @@ The system provides network-wide DNS filtering and DHCP services for my home net
 
 ---
 
-# Objectives
+## Table of Contents
+
+- [Project Overview](#project-overview)
+- [Objectives](#objectives)
+- [Hardware](#hardware)
+- [Software](#software)
+- [Project Specifications](#project-specifications)
+- [Network Configuration](#network-configuration)
+- [Installation](#installation)
+- [Challenges](#challenges)
+- [Results](#results)
+- [Skills Demonstrated](#skills-demonstrated)
+- [Lessons Learned](#lessons-learned)
+- [Future Improvements](#future-improvements)
+
+## Objectives
 
 - Block advertisements across the entire home network
 - Learn DNS and DHCP fundamentals
@@ -17,7 +37,7 @@ The system provides network-wide DNS filtering and DHCP services for my home net
 
 ---
 
-# Hardware
+## Hardware
 
 - Raspberry Pi 3B+
 - 32 GB MicroSD Card
@@ -27,7 +47,7 @@ The system provides network-wide DNS filtering and DHCP services for my home net
   
 ---
 
-# Software
+## Software
 
 - Raspberry Pi OS
 - Pi-hole
@@ -48,7 +68,7 @@ The system provides network-wide DNS filtering and DHCP services for my home net
 | Router | Virgin Media Hub 5 |
 | Network Type | Home LAN |
 
-# Network Configuration
+## Network Configuration
 
 The Virgin Media router DHCP service was disabled.
 
@@ -67,7 +87,7 @@ The installation process included:
 5. Enabling the Pi-hole DHCP server.
 6. Testing DNS resolution from multiple client devices.
 
-# Challenges
+## Challenges
 
 The biggest challenge was configuring the Virgin Media router correctly.
 
@@ -75,7 +95,7 @@ Disabling the router DHCP service and allowing Pi-hole to become the DHCP server
 
 ---
 
-# Skills Demonstrated
+## Skills Demonstrated
 
 - Linux Administration
 - DNS
@@ -85,6 +105,19 @@ Disabling the router DHCP service and allowing Pi-hole to become the DHCP server
 - Troubleshooting
 
 ---
+
+## Features
+
+- Network-wide advertisement blocking
+- DNS filtering
+- DHCP server
+- Cloudflare upstream DNS
+- Web administration interface
+- Real-time query logging
+- Raspberry Pi deployment
+- Custom 3D-printed enclosure
+- Dedicated 5-inch display
+
 ## Results
 
 The completed deployment provides:
@@ -96,11 +129,12 @@ The completed deployment provides:
 - Web-based monitoring interface
 - Reliable operation for all connected home devices
 
-# Lessons Learned
+## Lessons Learned
 
 This project helped me understand how DNS requests are processed inside a home network and how DHCP controls which DNS server clients receive.
 
 It also improved my troubleshooting skills when working with network devices.
+
 ## Future Improvements
 
 Planned future improvements include:
