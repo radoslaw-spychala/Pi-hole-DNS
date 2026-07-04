@@ -19,7 +19,7 @@ Currently running 24/7 on my home network, providing DNS filtering and DHCP serv
 
 ## Project Overview
 
-This project documents the deployment of a Pi-hole DNS server running on a Raspberry Pi 3B+ with a dedicated 5-inch OSOYOO HDMI display housed in a custom 3D-printed enclosure.
+This project documents the deployment of a Pi-hole DNS server running on a Raspberry Pi 3B+ with 5-inch OSOYOO HDMI display housed in a custom 3D-printed enclosure.
 
 The system provides network-wide DNS filtering and DHCP services for my home network, improving privacy, reducing advertisements and giving me practical experience with Linux administration, networking and self-hosted infrastructure.
 
