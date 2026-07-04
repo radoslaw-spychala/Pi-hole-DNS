@@ -77,7 +77,7 @@ The system provides network-wide DNS filtering and DHCP services for my home net
 ## Hardware
 
 - Raspberry Pi 3B+
-- 32 GB MicroSD Card
+- 64 GB MicroSD Card
 - OSOYOO 5-inch HDMI Display
 - Custom 3D-printed enclosure
 - Virgin Media Hub 5
