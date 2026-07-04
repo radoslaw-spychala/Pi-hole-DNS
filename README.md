@@ -42,23 +42,6 @@ The Virgin Media router DHCP service was disabled.
 Pi-hole was configured to provide DHCP services so every device connecting to the home network automatically used Pi-hole for DNS resolution.
 
 ---
-## Network Architecture
-
-```text
-                Internet
-                    │
-          Virgin Media Hub 5
-            DHCP Disabled
-                    │
-        Raspberry Pi 3B+
-      Pi-hole (DNS + DHCP)
-                    │
-    ┌────────┬────────┬────────┐
-    │        │        │
-   PC      Xbox    Smartphones
-             │
-         Smart Devices
-```
 
 # Challenges
 
