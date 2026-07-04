@@ -78,7 +78,7 @@ The system provides network-wide DNS filtering and DHCP services for my home net
 
 - Raspberry Pi 3B+
 - 64 GB MicroSD Card
-- OSOYOO 5-inch HDMI Display
+- OSOYOO 5-inch display
 - Custom 3D-printed enclosure
 - Virgin Media Hub 5
 
@@ -88,7 +88,6 @@ The system provides network-wide DNS filtering and DHCP services for my home net
 
 - Raspberry Pi OS
 - Pi-hole
-- Cloudflare DNS (Upstream Resolver)
 
 ---
 
