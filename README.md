@@ -25,6 +25,17 @@ The system provides network-wide DNS filtering and DHCP services for my home net
 
 ---
 
+## Key Achievements
+
+- Deployed Pi-hole on Raspberry Pi 3B+
+- Migrated DHCP from ISP router
+- Implemented network-wide DNS filtering
+- Configured Cloudflare DNS with DNSSEC
+- Designed custom 3D-printed enclosure
+- Created complete technical documentation
+
+---
+
 ## Network Architecture
 
 The diagram below illustrates the architecture of my home network. Pi-hole provides DNS filtering, DNSSEC validation and DHCP services, while the ISP router operates with DHCP disabled.
