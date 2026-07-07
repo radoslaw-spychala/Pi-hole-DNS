@@ -27,7 +27,7 @@ The system provides network-wide DNS filtering and DHCP services for my home net
 
 ## Network Architecture
 
-The diagram below illustrates the deployment of Pi-hole within my home network. The ISP router forwards network traffic, while Pi-hole provides DNS filtering and DHCP services for all LAN clients.
+The diagram below illustrates the architecture of my home network. Pi-hole provides DNS filtering, DNSSEC validation and DHCP services, while the ISP router operates with DHCP disabled.
 
 ```mermaid
 flowchart TD
