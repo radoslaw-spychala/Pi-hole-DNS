@@ -82,25 +82,23 @@ Pi-hole is configured as the DHCP server for the local network after migrating D
 
 ## Table of Contents
 
-- [Pi-hole DNS Server](#pi-hole-dns-server)
-  - [Project Status](#project-status)
-  - [Project Overview](#project-overview)
-  - [Table of Contents](#table-of-contents)
-  - [Objectives](#objectives)
-  - [Features](#features)
-  - [Hardware](#hardware)
-  - [Software](#software)
-  - [Project Specifications](#project-specifications)
-  - [Network Configuration](#network-configuration)
-  - [Installation](#installation)
-  - [Challenges](#challenges)
-  - [Results](#results)
-  - [Skills Demonstrated](#skills-demonstrated)
-  - [Lessons Learned](#lessons-learned)
-  - [Future Improvements](#future-improvements)
-  - [Repository Structure](#repository-structure)
-  - [Screenshots](#screenshots)
-  - [Network Diagram](#network-diagram)
+- [Project Status](#project-status)
+- [Project Overview](#project-overview)
+- [Network Architecture](#network-architecture)
+- [Configuration Screenshots](#configuration-screenshots)
+- [Objectives](#objectives)
+- [Features](#features)
+- [Hardware](#hardware)
+- [Software](#software)
+- [Project Specifications](#project-specifications)
+- [Network Configuration](#network-configuration)
+- [Installation](#installation)
+- [Challenges](#challenges)
+- [Results](#results)
+- [Skills Demonstrated](#skills-demonstrated)
+- [Lessons Learned](#lessons-learned)
+- [Future Improvements](#future-improvements)
+- [Repository Structure](#repository-structure)
 
 ---
 
@@ -253,34 +251,21 @@ Planned future improvements include:
 
 ## Repository Structure
 
+## Repository Structure
+
 ```text
 Pi-hole-DNS/
 │
-├── README.md
-├── CHANGELOG.md
-├── LICENSE
 ├── images/
 │   ├── hero.jpg
 │   ├── dashboard.png
 │   ├── dns-settings.png
-│   ├── dhcp-settings.png
-│   ├── query-log.png
-│   └── network-overview.png
+│   └── dhcp-settings.png
 │
-├── diagrams/
-│   └── network-topology.png
-│
-└── docs/
+├── CHANGELOG.md
+├── LICENSE
+└── README.md
 ```
 
 ---
 
-## Screenshots
-
-*Coming soon.*
-
----
-
-## Network Diagram
-
-*Coming soon.*
