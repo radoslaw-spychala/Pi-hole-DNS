@@ -25,6 +25,12 @@ The system provides network-wide DNS filtering and DHCP services for my home net
 
 ---
 
+## Dashboard
+
+The screenshot below shows the live Pi-hole dashboard running on my home network.
+
+![Pi-hole Dashboard](images/dashboard.png)
+
 ## Table of Contents
 
 - [Pi-hole DNS Server](#pi-hole-dns-server)
