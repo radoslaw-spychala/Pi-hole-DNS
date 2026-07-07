@@ -25,6 +25,43 @@ The system provides network-wide DNS filtering and DHCP services for my home net
 
 ---
 
+## Network Architecture
+
+The diagram below illustrates the deployment of Pi-hole within my home network. The ISP router forwards network traffic, while Pi-hole provides DNS filtering and DHCP services for all LAN clients.
+
+```mermaid
+flowchart TD
+
+    Internet((Internet))
+
+    Cloudflare["Cloudflare DNS<br/>Primary: 1.1.1.1<br/>Secondary: 1.0.0.1"]
+
+    Router["Virgin Hub 5<br/>DHCP Disabled"]
+
+    PiHole["Raspberry Pi 3B+<br/><br/>Pi-hole<br/><br/>DNS Filtering<br/>DHCP Server<br/>DNSSEC"]
+
+    Clients["LAN Clients<br/><br/>• PCs<br/>• Phones<br/>• Smart TV<br/>• Xbox"]
+
+    Internet --> Cloudflare
+    Cloudflare --> Router
+    Router --> PiHole
+
+    PiHole -. DNS .-> Clients
+    PiHole -. DHCP .-> Clients
+
+    classDef internet fill:#424242,color:#fff,stroke:#ffffff;
+    classDef dns fill:#f39c12,color:#fff,stroke:#ffffff;
+    classDef router fill:#7f8c8d,color:#fff,stroke:#ffffff;
+    classDef pihole fill:#2ecc71,color:#fff,stroke:#ffffff;
+    classDef clients fill:#95a5a6,color:#fff,stroke:#ffffff;
+
+    class Internet internet;
+    class Cloudflare dns;
+    class Router router;
+    class PiHole pihole;
+    class Clients clients;
+```
+
 ## Configuration Screenshots
 
 ### Dashboard
