@@ -260,7 +260,6 @@ Planned future improvements include:
 
 ---
 
-## Repository Structure
 
 ## Repository Structure
 
