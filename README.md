@@ -25,11 +25,23 @@ The system provides network-wide DNS filtering and DHCP services for my home net
 
 ---
 
-## Dashboard
+## Configuration Screenshots
 
-The screenshot below shows the live Pi-hole dashboard running on my home network.
+### Dashboard
 
-![Pi-hole Dashboard](images/dashboard.png)
+![Dashboard](images/dashboard.png)
+
+### DNS Configuration
+
+Pi-hole uses Cloudflare DNS (1.1.1.1 / 1.0.0.1) with DNSSEC enabled.
+
+![DNS Settings](images/dns-settings.png)
+
+### DHCP Configuration
+
+Pi-hole is configured as the DHCP server for the local network after migrating DHCP services from the ISP router.
+
+![DHCP Settings](images/dhcp-settings.png)
 
 ## Table of Contents
 
